@@ -1,0 +1,18 @@
+public class Main
+{
+	public static void main(String[] args) {
+		int number = 7;
+		boolean isPrime = true;
+		for(int del = 2; del < Math.sqrt(number); del ++){
+		    if(number % del == 0)
+		        isPrime = false;
+		    else
+		        isPrime = true;
+		
+		}
+	if(isPrime == true)
+	    System.out.print(number + " isPrime");
+	else
+	    System.out.print(number + " notPrime");
+	}
+}
